@@ -43,7 +43,7 @@ ini adalah Output menu ke 6 di menu Admin yaitu untuk mengganti pilihan hotel, m
 
 ini adalah Output menu 0/Logout saat menu ini dipilih maka akan kembali ke menu pertama.
 
-#Output Menggunakan Akun User/Customer
+# Output Menggunakan Akun User/Customer
 
 <img width="588" height="395" alt="Screenshot 2026-11-02 233030" src="https://github.com/user-attachments/assets/c8afcd8f-aa36-4d0c-8005-4a03b0e80e8b" />
 
