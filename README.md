@@ -129,7 +129,9 @@ Library yang ada di program ini:
 ## Screenshoot Dan Penjelasan Output<br>
 
 ## Output menggunakan Akun Admin<br>
-<img width="502" height="201" alt="Screenshot 2026-11-02 224211" src="https://github.com/user-attachments/assets/3c1895aa-69b1-4df8-9095-9f1a11c0d1ec" <br>
+
+
+<img width="496" height="202" alt="Screenshot 2026-11-03 193309" src="https://github.com/user-attachments/assets/a57dc0db-6b83-4f45-b173-6fac77775dac" />
 
 Ini adalah Output pertama saat Aplikasi di buka yang menampilkan 3 menu yaitu menu Login,Registrasi Akun,Keluar Aplikasi<br>
 
