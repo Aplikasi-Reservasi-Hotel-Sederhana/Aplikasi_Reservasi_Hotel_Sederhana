@@ -1,8 +1,9 @@
 # Aplikasi_Reservasi_Hotel_Sederhana
+---
 <br>
 <h1 align="center">Praktikum Dasar-Dasar Pemograman<br> </h1>
 <p align="center">KELOMPOK 7<br></p>
-
+---
 <p align="center">
   <b>ANGGOTA KELOMPOK :</b>
 </p>
@@ -14,27 +15,65 @@
 | 3 | Shella Nazeela Saputra| 2609116018| Laporan dan Pengembangan Program |
 | 4 | Satria Aji Sastra| 2609116019 | Pengembangan Program dan Penjelasan alur di Laporan |
 
+---
+
 <p align="center"> Deskripsi :<br>
 Program reservasi hotel menggunakan Python merupakan aplikasi sederhana yang dirancang untuk membantu proses pemesanan dan pengelolaan kamar hotel secara terkomputerisasi. Program ini memiliki beberapa fitur, seperti login pengguna dan admin, melihat daftar kamar, melakukan reservasi, serta mengelola data kamar. <br>
 Adapun tujuan dari program ini adalah<br>
   
-1.	Menghasilkan aplikasi reservasi hotel sederhana yang dapat menjalankan proses pemesanan kamar sesuai dengan fitur yang dirancang. <br>
-2.	Memahami proses perancangan dan implementasi program untuk menyelesaikan permasalahan yang berkaitan dengan reservasi hotel. <br>
-3.	Aplikasi dirancang sebagai program sederhana untuk memenuhi kebutuhan pembelajaran mata kuliah Dasar-Dasar Pemrograman, bukan sebagai sistem reservasi hotel komersial yang sepenuhnya terintegrasi.<br>
+> 1.	Menghasilkan aplikasi reservasi hotel sederhana yang dapat menjalankan proses pemesanan kamar sesuai dengan fitur yang dirancang. <br>
+> 2.	Memahami proses perancangan dan implementasi program untuk menyelesaikan permasalahan yang berkaitan dengan reservasi hotel. <br>
+> 3.	Aplikasi dirancang sebagai program sederhana untuk memenuhi kebutuhan pembelajaran mata kuliah Dasar-Dasar Pemrograman, bukan sebagai sistem reservasi hotel komersial yang sepenuhnya terintegrasi.<br>
+
+---
 
 ## Flowchart
 1. Flowchart Menu Login <br>
-Flowchart dibawah mendeskripsikan alur bagaimana proses menu login berjalan yang dimana proses tersebut dibuat agar pengguna program bisa memiliki 2 role dengan cara memaasukkan username dan password. Selain itu terdapat dua role didalam menu login tersebut yaitu Role Admin dan Role User <br>
+> Flowchart dibawah mendeskripsikan alur bagaimana proses menu login berjalan yang dimana proses tersebut dibuat agar pengguna program bisa memiliki 2 role dengan cara memaasukkan username dan password. Selain itu terdapat dua role didalam menu login tersebut yaitu Role Admin dan Role User <br>
+
 <img width="16384" height="16144" alt="PA DDP-Page-1 drawio" src="https://github.com/user-attachments/assets/2b4fea18-7c18-429c-a9d2-bf3dc3868b9a" /><br>
 
 2. Flowchart Menu Admin <br>
 <img width="7300" height="4802" alt="PA DDP-Page-2 drawio (1)" src="https://github.com/user-attachments/assets/6da1521b-7bf6-4ff5-b6ec-1cbf22696dc1" /><br>
-Flowchart diatas merupakan alur dari menu admin yang dimana setelah username memasukkan username dan password yang sesuai dengan akun admin, program akan menjalankan memu admin kepada pengguna. Fitur yang ada didalam menu tersebut yaitu menambah kamar, melihat daftar kamar, melihat daftar reservasi, mengubah harga dan status kamar, menghapus kamar, mengganti hotel, serta logout.<br>
+
+> Flowchart diatas merupakan alur dari menu admin yang dimana setelah username memasukkan username dan password yang sesuai dengan akun admin, program akan menjalankan memu admin kepada pengguna. Fitur yang ada didalam menu tersebut yaitu menambah kamar, melihat daftar kamar, melihat daftar reservasi, mengubah harga dan status kamar, menghapus kamar, mengganti hotel, serta logout.<br>
 
 3. Flowchart Menu User <br>
 <img width="16384" height="8871" alt="PA DDP-Page-3 drawio" src="https://github.com/user-attachments/assets/316628f1-3ca1-4050-b262-d282ef5993ee" /><br>
-Flowchart diatas merupakan alur dari menu User yang dimana setelah username memasukkan username dan password yang sesuai dengan akun User, program akan menjalankan memu user kepada pengguna. Adapun isi menunya yaitu ,melihat daftar kamar dan harga, melakukan pemesanan kamar, melihat reservasi, membatalkan reservasi, mencetak invoice, melakukan top up saldo, mengganti hotel, dan logout.<br>
 
+> Flowchart diatas merupakan alur dari menu User yang dimana setelah username memasukkan username dan password yang sesuai dengan akun User, program akan menjalankan memu user kepada pengguna. Adapun isi menunya yaitu ,melihat daftar kamar dan harga, melakukan pemesanan kamar, melihat reservasi, membatalkan reservasi, mencetak invoice, melakukan top up saldo, mengganti hotel, dan logout.<br>
+---
+# FITUR PER-ROLE 
+
+## FITUR MENU ROLE ADMIN <BR>
+
+## FITUR MENU ROLE USER <BR>
+**Dibawah adalah menu dari role user secara berurutan** <br>
+
+<img width="300" height="275" alt="Screenshot 2026-11-03 171846" src="https://github.com/user-attachments/assets/e1f38c9b-0653-4eba-bace-394dd0bc0c4e" /> <br>
+**1. Melihat Data Kamar**
+> Menu ini digunakan oleh user untuk melihat daftar kamar yang tersedia di hotel yang sedang dipilih. Program akan menampilkan informasi berupa nomor kamar, nama kamar, tipe kamar, dan harga kamar. Kamar yang berstatus tidak tersedia tidak akan ditampilkan, sehingga user hanya dapat melihat kamar yang bisa dipesan.
+
+**2. Pesan Kamar**<br>
+>  Menu ini digunakan untuk melakukan pemesanan kamar hotel. User dapat memilih kamar berdasarkan daftar kamar yang tersedia. Setelah memilih kamar, program akan memeriksa saldo akun. Jika saldo tidak mencukupi, user akan diberikan pilihan untuk melakukan top up terlebih dahulu. Jika saldo mencukupi dan pemesanan dikonfirmasi, biaya kamar akan dipotong dari saldo, data reservasi disimpan, dan status kamar berubah menjadi tidak tersedia.
+
+**3. Lihat Reservasi**<br>
+> Menu ini digunakan untuk melihat riwayat reservasi yang telah dilakukan oleh user. Program akan mengambil data dari file `reservasi.json`, kemudian menampilkan reservasi berdasarkan username yang sedang login. Informasi yang ditampilkan meliputi nama hotel, nama kamar, tipe kamar, dan harga kamar.
+
+**4. Batalkan Reservasi**<br>
+> Menu ini digunakan untuk membatalkan reservasi kamar yang sudah dilakukan. User dapat melihat daftar reservasinya, kemudian memilih reservasi yang ingin dibatalkan. Setelah melakukan konfirmasi, data reservasi akan dihapus dari file reservasi.json dan status kamar akan dikembalikan menjadi tersedia sehingga dapat dipesan kembali.
+
+**5. Cetak Invoice** <br>
+> Menu ini digunakan untuk mencetak atau menampilkan invoice sebagai bukti informasi pemesanan kamar. User dapat memilih reservasi yang ingin dibuatkan invoice. Program akan menampilkan identitas tamu, informasi hotel, nama kamar, tipe kamar, biaya sewa, pajak daerah sebesar 10%, dan total tagihan yang harus dibayarkan.
+
+**6. Top Up** <br>
+> Menu ini digunakan untuk menambahkan saldo ke akun user agar dapat digunakan untuk melakukan pemesanan kamar. Program akan menampilkan saldo saat ini, kemudian meminta user memasukkan nominal top up. Nominal minimal adalah Rp100.000 dan maksimal Rp10.000.000. Setelah berhasil, saldo baru akan disimpan ke dalam file `akun.json.`
+
+**7. Ganti Hotel** <br>
+> Menu ini digunakan apabila user ingin mengganti hotel yang sedang dipilih. Program akan menampilkan tiga pilihan hotel, yaitu Hotel Aston, Hotel Mercure, dan Hotel Harris. Setelah user memilih salah satunya, tampilan menu akan diperbarui sesuai hotel yang dipilih sehingga user dapat melihat dan memesan kamar di hotel tersebut.
+
+**8. Logout**
+> Menu ini digunakan untuk keluar dari akun user. Ketika user memilih angka 0, program akan menampilkan pesan bahwa user sedang keluar dari menu, kemudian menghentikan perulangan menu user. Setelah itu, pengguna kembali ke menu awal aplikasi.
 
 ## Screenshoot Dan Penjelasan Output<br>
 
