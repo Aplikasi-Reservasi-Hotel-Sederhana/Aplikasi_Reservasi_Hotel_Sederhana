@@ -44,6 +44,32 @@ Adapun tujuan dari program ini adalah<br>
 
 > Flowchart diatas merupakan alur dari menu User yang dimana setelah username memasukkan username dan password yang sesuai dengan akun User, program akan menjalankan memu user kepada pengguna. Adapun isi menunya yaitu ,melihat daftar kamar dan harga, melakukan pemesanan kamar, melihat reservasi, membatalkan reservasi, mencetak invoice, melakukan top up saldo, mengganti hotel, dan logout.<br>
 ---
+
+## Komponen yang ada di dalam program ini:
+
+`Def` ==> Digunakan untuk membuat sebuah fungsi baru. contoh fungsi menu admin, dimana fungsi ini berisi semua opsi pilihan untuk menu admin.
+
+`library` ==> Fitur yang sudah disediakan oleh python. Dengan import (import json, import pwinput, import prettytable, dll), fitur tersebut dipanggil untuk memproses perintah lainnya di program ini. 
+
+Library yang ada di program ini:
+ 
+> import json ==> Untuk membaca/ngeload, menyimpan data ke database yang sudah dibuat (data kamar, reservasi, akun) <br>
+> import os ==> Khususnya os clear untuk membersihkan history program ketika telah dijalankan, bertujuan agar terminal lebih rapih dan bersih. <br>
+> import pwinput ==> Untuk menyamarkan password menjadi bintang (*) ketika penginputan. <br>
+> import prettytable ==> Untuk menampilkan data menjadi sebuah tabel agar terlihat lebih rapih dan mudah dibaca/lihat. <br>
+> import time ==> Untuk memberikan jeda di beberapa program contohnya saat pencetakan invoice sseakan-akan pencetakan sedang diproses. <br>
+
+`if-else` ==> Untuk membuat percabangan opsi. selain itu untuk validasi input jika tidak sesuai opsi.
+
+`try-except` ==> Sebagai error handling ketika input tidak sesuai ketentuan dan jika menekan (ctrl + c).
+
+`while` ==> Untuk membuat menu terus menerus berulang sampai user keluar dari aplikasi.
+
+`for` ==> Untuk mengurutkan secara terus menerus data yang tersimpan di database (kamar, harga, tipe) sampai seluruh data terlaod/terbaca.
+
+`print` ==> Untuk menampilkan output.
+
+
 # FITUR PER-ROLE 
 
 ## FITUR MENU ROLE ADMIN <BR>
