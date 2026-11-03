@@ -1,16 +1,23 @@
 # Aplikasi_Reservasi_Hotel_Sederhana
 <br>
-**Praktikum Dasar-Dasar Pemograman** <br>
-*KELOMPOK 7*<br>
-ANGGOTA KELOMPOK :<br>
-1. Jessica Chatarina Sinaga (2609116016) (konsep Pemograman dan Pengembangan Program)<br>
-2. Firdaus Ramadhani (2609116004) ( Pengembangan program dan Flowchart) <br>
-3. Shella Nazeela Saputra (2609116018) (Laporan dan Pengembangan Program) <br>
-4.Satria Aji Sastra (2609116019) (Pengembangan Program dan Penjelasan alur di Laporan) <br>
-<br>
-Deskripsi :<br>
+<h1 align="center">Praktikum Dasar-Dasar Pemograman<br> </h1>
+<p align="center">KELOMPOK 7<br></p>
+
+<p align="center">
+  <b>ANGGOTA KELOMPOK :</b>
+</p>
+
+| No | Nama | NIM | Tugas |
+|:---:|:---|:---|:---|
+| 1 | Jessica Chatarina Sinaga| 2609116016| konsep Pemograman dan Pengembangan Program |
+| 2 | Firdaus Ramadhani | 2609116004 |  Pengembangan program dan Flowchart |
+| 3 | Shella Nazeela Saputra| 2609116018| Laporan dan Pengembangan Program |
+| 4 | Satria Aji Sastra| 2609116019 | Pengembangan Program dan Penjelasan alur di Laporan |
+
+<p align="center"> Deskripsi :<br>
 Program reservasi hotel menggunakan Python merupakan aplikasi sederhana yang dirancang untuk membantu proses pemesanan dan pengelolaan kamar hotel secara terkomputerisasi. Program ini memiliki beberapa fitur, seperti login pengguna dan admin, melihat daftar kamar, melakukan reservasi, serta mengelola data kamar. <br>
 Adapun tujuan dari program ini adalah<br>
+  
 1.	Menghasilkan aplikasi reservasi hotel sederhana yang dapat menjalankan proses pemesanan kamar sesuai dengan fitur yang dirancang. <br>
 2.	Memahami proses perancangan dan implementasi program untuk menyelesaikan permasalahan yang berkaitan dengan reservasi hotel. <br>
 3.	Aplikasi dirancang sebagai program sederhana untuk memenuhi kebutuhan pembelajaran mata kuliah Dasar-Dasar Pemrograman, bukan sebagai sistem reservasi hotel komersial yang sepenuhnya terintegrasi.<br>
