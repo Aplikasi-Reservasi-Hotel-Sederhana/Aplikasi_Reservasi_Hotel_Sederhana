@@ -1,0 +1,16 @@
+{
+    "admin": {
+        "Admin1": {
+            "password": "iniadmin"
+        },
+        "Admin2": {
+            "password": "admin123"
+        }
+    },
+    "user": {
+        "Jessy": {
+            "password": "jes123",
+            "saldo": 0
+        }
+    }
+}
