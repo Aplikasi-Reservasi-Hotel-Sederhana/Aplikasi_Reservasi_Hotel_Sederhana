@@ -6,4 +6,8 @@
         "Admin2": {
             "password": "admin123"
         }
+    },
+    "user": {
+
+        }
 }
