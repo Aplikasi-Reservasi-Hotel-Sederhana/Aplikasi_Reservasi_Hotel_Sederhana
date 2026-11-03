@@ -6,14 +6,14 @@ penjelasan sederhana blablabla
 
 <img width="16384" height="16144" alt="PA DDP-Page-1 drawio" src="https://github.com/user-attachments/assets/2b4fea18-7c18-429c-a9d2-bf3dc3868b9a" />
 
-<img width="16384" height="10778" alt="PA DDP-Page-2 drawio" src="https://github.com/user-attachments/assets/00f78acc-6c8b-4d8f-89e2-256ec821b174" />
+<img width="7300" height="4802" alt="PA DDP-Page-2 drawio (1)" src="https://github.com/user-attachments/assets/6da1521b-7bf6-4ff5-b6ec-1cbf22696dc1" />
 
-<img width="16384" height="8871" alt="PA DDP-Page-3 drawio" src="https://github.com/user-attachments/assets/94b83a1b-cbd7-4f50-82be-5d4fa13994d7" />
+<img width="16384" height="8871" alt="PA DDP-Page-3 drawio" src="https://github.com/user-attachments/assets/316628f1-3ca1-4050-b262-d282ef5993ee" />
 
 
-# Screenshoot Dan Penjelasan Output
+## Screenshoot Dan Penjelasan Output
 
-# Output menggunakan Akun Admin
+## Output menggunakan Akun Admin
 <img width="502" height="201" alt="Screenshot 2026-11-02 224211" src="https://github.com/user-attachments/assets/3c1895aa-69b1-4df8-9095-9f1a11c0d1ec" />
 
 Ini adalah Output pertama saat Aplikasi di buka yang menampilkan 3 menu yaitu menu Login,Registrasi Akun,Keluar Aplikasi
