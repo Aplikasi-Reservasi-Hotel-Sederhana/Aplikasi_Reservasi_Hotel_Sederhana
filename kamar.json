@@ -1,0 +1,68 @@
+{
+    "Aston": [
+        {
+            "nama": "A101",
+            "tipe": "Deluxe",
+            "harga": 500000,
+            "status": "Tersedia"
+        },
+        {
+            "nama": "A102",
+            "tipe": "Executive",
+            "harga": 850000,
+            "status": "Tersedia"
+        },
+        {
+            "nama": "A103",
+            "tipe": "Standard",
+            "harga": 400000,
+            "status": "Tersedia"
+        },
+        {
+            "nama": "A104",
+            "tipe": "Deluxe",
+            "harga": 650000,
+            "status": "Tersedia"
+        }
+    ],
+    "Mercure": [
+        {
+            "nama": "M201",
+            "tipe": "Superior",
+            "harga": 600000,
+            "status": "Tersedia"
+        },
+        {
+            "nama": "M202",
+            "tipe": "Standard",
+            "harga": 350000,
+            "status": "Tersedia"
+        },
+        {
+            "nama": "M203",
+            "tipe": "Deluxe",
+            "harga": 700000,
+            "status": "Tersedia"
+        }
+    ],
+    "Harris": [
+        {
+            "nama": "H301",
+            "tipe": "Standard",
+            "harga": 450000,
+            "status": "Tersedia"
+        },
+        {
+            "nama": "H302",
+            "tipe": "Superior",
+            "harga": 550000,
+            "status": "Tersedia"
+        },
+        {
+            "nama": "H303",
+            "tipe": "Deluxe",
+            "harga": 750000,
+            "status": "Tersedia"
+        }
+    ]
+}
