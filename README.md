@@ -73,6 +73,30 @@ Library yang ada di program ini:
 # FITUR PER-ROLE 
 
 ## FITUR MENU ROLE ADMIN <BR>
+**Dibawah adalah menu dari role admin secara berurutan** <br>
+
+<img width="252" height="161" alt="Cuplikan layar 2026-11-03 205827" src="https://github.com/user-attachments/assets/f931d502-f6c8-4f63-806d-ad9deea3d1ed" /><br>
+**1. Tambah Kamar Baru**<br>
+> Menu ini digunakan oleh admin untuk menambahkan data kamar baru ke dalam sistem hotel yang sedang dipilih. Admin diminta untuk memasukkan nama kamar, tipe kamar, dan harga kamar dengan validasi sistem yang memastikan input tidak kosong dan harga tidak bernilai negatif. Setelah data lengkap, kamar baru akan otomatis tersimpan dengan status "Tersedia".
+
+**2. Lihat Semua Kamar** <br>
+> Menu ini digunakan oleh admin untuk melihat daftar keseluruhan kamar yang terdaftar pada hotel yang sedang dipilih. Program akan menampilkan informasi lengkap dalam bentuk tabel yang mencakup nomor, nama kamar, tipe kamar, harga (dalam format Rupiah), dan status ketersediaan kamar tersebut.
+
+**3. Lihat Daftar Reservasi (Semua Hotel)** <br>
+> Menu ini digunakan oleh admin untuk melihat rekapitulasi seluruh data reservasi pelanggan dari semua hotel yang dikelola dalam sistem. Informasi yang ditampilkan meliputi nomor, nama customer, nama hotel tempat memesan, nomor kamar, serta tipe kamar yang dipesan dalam format tabel yang rapi.
+
+**4. Ubah Harga dan Status Kamar** <br>
+> Menu ini digunakan oleh admin untuk memperbarui informasi harga atau status ketersediaan dari kamar tertentu. Admin dapat memilih kamar berdasarkan nomor urut, lalu memasukkan harga baru atau mengubah status kamar antara "Tersedia" dan "Tidak Tersedia" sesuai kebutuhan.
+
+**5. Hapus Data Kamar** <br>
+> Menu ini digunakan oleh admin untuk menghapus data kamar yang sudah tidak aktif atau salah dari daftar hotel yang sedang dipilih. Admin memasukkan nomor urut kamar yang ingin dihapus, dan sistem akan menghapus data tersebut secara permanen dari penyimpanan.
+
+**6. Ganti Pilihan Hotel** <br>
+> Menu ini digunakan oleh admin untuk beralih atau mengganti pengelolaan ke hotel lain (seperti Hotel Aston, Hotel Mercure, atau Hotel Harris) tanpa harus keluar dari program utama.
+
+**0. Logout** 
+> Menu ini digunakan oleh admin untuk keluar dari sesi menu admin saat ini dan menghentikan perulangan program atau kembali ke halaman utama sistem.   
+
 
 ## FITUR MENU ROLE USER <BR>
 **Dibawah adalah menu dari role user secara berurutan** <br>
@@ -194,82 +218,6 @@ ini adalah Output menu terakhir user yaitu Logout keluar dari menu User dan kemb
 <img width="525" height="238" alt="Screenshot 2026-11-03 073713" src="https://github.com/user-attachments/assets/9c3ff36a-bfb4-4394-b4c2-9176c0c6f68b" /><br>
 
 ini adalah Output menu terakhir Login yaitu Keluar Aplikasi<br>
-
-## Screenshoot Dan Penjelasan Kode Program<br>
-
-## Kode Program pada Akun Admin<br>
-<img width="377" height="409" alt="Cuplikan layar 2026-11-03 160221" src="https://github.com/user-attachments/assets/c27ab50f-4a79-4012-af98-66635cd94120" /><br>
-Kode berikut mendefinisikan sebuah fungsi untuk menampilkan dan mengelola Menu Admin dalam sistem manajemen hotel.<br>
-Kode tersebut diawali dengan memanggil fungsi pilih_hotel() untuk menentukan hotel mana yang sedang dikelola.<br>
-Setelah memilih hotel yang ingin dikelola, dilanjutkan dengan menampilkan beberapa menu yang ada pada menu admin. <br>
-Menggunakan Menu Berulang (while True) agar program menampilkan antarmuka pilihan menu berbasis teks secara terus-menerus hingga admin memilih untuk keluar<br>
-<br>
-Pilihan 1 untuk menambahkan kamar<br>
-Pilihan 2 untuk menampilkan kamar<br>
-Pilihan 3 untuk melihat reservasi<br>
-Pilihan 4 untuk mengubah informasi kamar<br>
-Pilihan 5 untuk menghapus kamar<br>
-Pilihan 6 untuk memilih hotel lain<br>
-Pilihan 0 untuk keluar  dari menu admin<br>
-<br>
-Lalu terdapat validasi dan penanganan error dengan memastikan bahwa input harus berupa angka serta mencegah program berhenti mendadak jika menekan tombol ctrl + C<br>
-<br>
-<img width="391" height="446" alt="Cuplikan layar 2026-11-03 155809" src="https://github.com/user-attachments/assets/215f1d66-f572-4da1-91ab-11769d284998" /><br>
-Menu yang pertama adalah menambahkan kamar, dalam menu ini terdapat komponen utama yaitu:<br>
-Pemuatan Data -> Memanggil fungsi muat_data_kamar() untuk mengambil data kamar yang sudah ada sebelumnya.<br>
-Input Nama Kamar (while True) -> Meminta input nama kamar (contoh: A101) dengan validasi agar tidak boleh dikosongkan.<br>
-Input Tipe Kamar (while True) -> Meminta input tipe kamar (contoh: Exclusive/Deluxe/Standard) dengan validasi agar tidak boleh dikosongkan.<br>
-Input Harga Kamar (while True & try-except) -> Meminta input harga kamar berupa angka, memastikan nilainya tidak negatif, dan menangani error jika input bukan angka (ValueError).<br>
-Setelah pada kompenen utama, terdapat penyimpanan data<br>
-Mengemas data baru ke dalam dictionary kamar_baru dengan status default "Tersedia". Lalu, data baru tersebut masuk dalam list hotel yang bersangkutan, perubahan data menuju ke penyimpanan melalui fungsi simpan_data_kamar(data) dan menampilkan pesan sukses.<br>
-<br>
-<img width="384" height="348" alt="Cuplikan layar 2026-11-03 201039" src="https://github.com/user-attachments/assets/78368ade-063a-4f61-a205-586b457a7390" />
-<br>
-Menu kedua adalah menampilkan kamar, terdapat komponen utama yaitu:
-Pemuatan & Pengecekan Data -> Memuat data kamar dengan fungsi muat_data_kamar(). Jika data kamar pada hotel tersebut kosong, program akan mencetak informasi bahwa belum ada kamar dan mengembalikan nilai False.<br>
-Pembuatan Tabel (PrettyTable) -> Membuat objek tabel dengan kolom: No, Nama Kamar, Tipe Kamar, Harga, dan Status.<br>
-Mengatur perataan teks (alignment) -> rata kiri untuk Nama dan Tipe Kamar, rata kanan untuk Harga, serta rata tengah untuk Status.   Memasukkan Data ke Tabel -> Melakukan perulangan (for) untuk mengambil setiap data kamar, memformat harga menjadi format mata uang Rupiah, lalu memasukkannya baris per baris ke dalam tabel.<br>
-Menampilkan Hasil -> Mencetak tabel ke layar dan mengembalikan nilai True jika data berhasil ditampilkan.<br>
-<br>
-<img width="374" height="395" alt="Cuplikan layar 2026-11-03 155937" src="https://github.com/user-attachments/assets/4635635a-fb9e-4e68-b23b-0d70d85b1241" /><br>
-Menu ketiga adalah melihat reservasi, komponen utamanya adalah:<br>
-Membaca File JSON (try-except) -> Membuka file yang merujuk pada FILE_RESERVASI. Jika file tidak ditemukan atau format JSON rusak, program akan menampilkan informasi bahwa belum ada data reservasi dan menghentikan fungsi.<br>
-Pengecekan Data -> Jika data reservasi kosong, program akan mencetak informasi bahwa belum ada reservasi dan langsung keluar.<br>
-Pembuatan Tabel (PrettyTable) -> Membuat objek tabel dengan kolom: No, Nama Customer, Hotel, Kamar, dan Tipe.<br>
-Mengatur perataan teks (alignment) ke sebelah kiri untuk seluruh kolom agar mudah dibaca.<br>
-Memasukkan Data ke Tabel -> Melakukan perulangan (for) untuk mengambil setiap data reservasi, mengekstrak informasi detail (nama pelanggan, nama hotel, kamar, dan tipe), lalu memasukkannya baris per baris ke dalam tabel.<br>
-Menampilkan Hasil -> Mencetak tabel lengkap berisi daftar reservasi ke layar.<br>
-<br>
-<img width="416" height="445" alt="Cuplikan layar 2026-11-03 155856" src="https://github.com/user-attachments/assets/e2200010-e05c-476e-90fb-161920d2f5da" /><br>
-Menu keempat yaitu mengubah data, memiliki komponen utama yaitu :<br>
-Pemuatan & Pengecekan Data -> Memuat data kamar menggunakan muat_data_kamar() dan menampilkan daftar kamar dengan tampilkan_kamar(hotel). Jika data kamar kosong, fungsi akan langsung berhenti.<br>
-Pemilihan Nomor Kamar -> Meminta input nomor kamar yang ingin diubah, lalu mengubahnya menjadi indeks list (indeks = pilihan - 1) dengan validasi agar berada dalam rentang data yang ada.<br>
-Pembaruan Harga Kamar -> Meminta input harga baru. Jika admin menekan Enter tanpa mengisi, harga lama akan dipertahankan, lalu memastikan input berupa angka dan bernilai positif sebelum memperbarui atribut harga pada kamar yang dipilih.<br>
-Pembaruan Status Kamar -> Menampilkan status kamar saat ini. Meminta pilihan status baru (1 untuk "Tersedia", 2 untuk "Tidak Tersedia", atau menekan Enter jika ingin tetap) untuk memperbarui status kamar tersebut.<br>
-<img width="419" height="83" alt="Cuplikan layar 2026-11-03 155911" src="https://github.com/user-attachments/assets/39350952-f876-4e6c-826a-8e0e8d310e2c" /><br>
-Semua data baru tersebut masuk dalam list hotel yang bersangkutan, perubahan data menuju ke penyimpanan melalui fungsi simpan_data_kamar(data) serta memvalidasi semua kesalahan pada menu tersebut.<br>
-<br>
-<img width="388" height="274" alt="Cuplikan layar 2026-11-03 155923" src="https://github.com/user-attachments/assets/41229dab-0fb4-4609-b195-09ef79444347" /><br>
-Menu kelima adalah hapus data, komponen utamanya yaitu:<br>
-Pemuatan & Pengecekan Data -> Memuat data kamar menggunakan muat_data_kamar() dan menampilkan daftar kamar saat ini dengan tampilkan_kamar(hotel). Jika data kamar kosong, fungsi akan langsung berhenti (return).<br>
-Pemilihan Nomor Kamar -> Meminta input nomor kamar yang ingin dihapus, di mana pengguna dapat memasukkan angka 0 jika ingin membatalkan proses.<br>
-Proses Penghapusan & Penyimpanan -> Mengonversi pilihan nomor kamar menjadi indeks list (indeks = pilihan - 1).<br>
-Jika nomor kamar valid, data kamar dihapus dari list menggunakan metode .pop(indeks).<br>
-Menyimpan kembali data yang telah diperbarui ke penyimpanan melalui fungsi simpan_data_kamar(data) serta mencetak pesan sukses.<br>
-Penanganan Kesalahan (try-except) -> Menangani error jika pengguna memasukkan input selain angka (seperti huruf atau simbol) melalui blok ValueError.
-<br>
-<img width="373" height="244" alt="Cuplikan layar 2026-11-03 160156" src="https://github.com/user-attachments/assets/38f3ccdd-bb8a-4427-b44d-655b4832e988" /><br>
-Menu keenam adalah ganti pilihan hotel, komponennya adalah:<br>
-Menu Pilihan Hotel (while True) -> Menampilkan daftar pilihan hotel (Hotel Aston, Hotel Mercure, dan Hotel Harris) secara berulang di dalam perulangan tak terbatas hingga mendapatkan input yang valid.<br>
-Validasi Input Kosong -> Memeriksa apakah input dari pengguna kosong. Jika kosong, program akan mencetak pesan peringatan dan mengulang perulangan (continue).<br>
-Pengembalian Nilai (Return Value) -> Jika memilih 1, fungsi mengembalikan string "Aston".   Jika memilih 2, fungsi mengembalikan string "Mercure".   Jika memilih 3, fungsi mengembalikan string "Harris".<br>
-Validasi Pilihan Tidak Valid -> Jika pengguna memasukkan angka di luar rentang 1 sampai 3, program akan menampilkan pesan peringatan agar memasukkan angka yang sesuai.<br>
-<br>
-<img width="317" height="32" alt="Cuplikan layar 2026-11-03 203958" src="https://github.com/user-attachments/assets/8c8c3418-de0a-40d6-af48-b5817f7dd80a" /><br>
-Terakhir ada menu 0, yang dapat digunakan jika admin ingin logout.<br>
-
-
-
 
 
 
