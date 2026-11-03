@@ -1,5 +1,16 @@
 # Aplikasi_Reservasi_Hotel_Sederhana
 
+penjelasan sederhana blablabla
+
+## Flowchart
+
+<img width="16384" height="16144" alt="PA DDP-Page-1 drawio" src="https://github.com/user-attachments/assets/2b4fea18-7c18-429c-a9d2-bf3dc3868b9a" />
+
+<img width="16384" height="10778" alt="PA DDP-Page-2 drawio" src="https://github.com/user-attachments/assets/00f78acc-6c8b-4d8f-89e2-256ec821b174" />
+
+<img width="16384" height="8871" alt="PA DDP-Page-3 drawio" src="https://github.com/user-attachments/assets/94b83a1b-cbd7-4f50-82be-5d4fa13994d7" />
+
+
 # Screenshoot Dan Penjelasan Output
 
 # Output menggunakan Akun Admin
