@@ -2,6 +2,7 @@
 ---
 <br>
 <h1 align="center">Praktikum Dasar-Dasar Pemograman<br> </h1>
+<h2 align="center"> Aplikasi Reservasi Hotel Sederhana <br> </h2>
 <p align="center">KELOMPOK 7<br></p>
 ---
 <p align="center">
