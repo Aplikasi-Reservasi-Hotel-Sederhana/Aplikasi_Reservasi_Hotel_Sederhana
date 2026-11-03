@@ -3,7 +3,7 @@
 <br>
 <h1 align="center">Praktikum Dasar-Dasar Pemograman<br> </h1>
 <h2 align="center"> Aplikasi Reservasi Hotel Sederhana <br> </h2>
-<p align="center">KELOMPOK A7<br></p>
+<p align="center">KELOMPOK A5<br></p>
 ---
 <p align="center">
   <b>ANGGOTA KELOMPOK :</b>
